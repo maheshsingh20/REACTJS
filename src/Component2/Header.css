@@ -1,0 +1,59 @@
+/* Header.css */
+.header-file {
+    background-color: #ffffff; /* Dark background for the header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    position: fixed; /* Sticks to the top of the screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    z-index: 1000; /* Makes sure it's on top of other content */
+  }
+  
+  .header-file h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .header-file ul {
+    list-style: none; /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns the list items in a row */
+  }
+  
+  .header-file li {
+    margin-left: 20px; /* Space between the list items */
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for hover */
+    border-radius: 5px; /* Slightly rounded corners */
+  }
+  
+  .header-file li:hover {
+    background-color: #555; /* Darker shade on hover */
+    color: #f1c40f; /* Gold-like color on hover */
+  }
+  
+  #innerList {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase; /* Makes all text uppercase */
+  }
+  
+  .header-file li:active {
+    transform: scale(0.95); /* Slightly scales down when clicked */
+  }
+  
+  /* To prevent content from going under the fixed header */
+  body {
+    padding-top: 80px; /* Adjust this value to match the height of your header */
+  }
+  

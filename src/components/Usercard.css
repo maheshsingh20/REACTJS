@@ -1,0 +1,9 @@
+.card-container {
+    width: 200px; /* Set a width for each card */
+    margin: 20px; /* Add space between the cards */
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure content inside the card is centered */
+  }
